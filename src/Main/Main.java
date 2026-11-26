@@ -12,7 +12,7 @@ public class Main extends Application {
     public void start(Stage stage) {
         window = Window.getInstance();
         // Bố cục chính
-        stage.setTitle("Bomberman v3.14.15.9.26");
+        stage.setTitle("tic tac toe");
         stage.setResizable(false);
         stage.setMaximized(false);
         stage.setScene(window.getScene());

@@ -59,19 +59,13 @@ public class Window {
         StateMachine stateMachine = StateMachine.getInstance();
         switch (stateMachine.getCurrentState()) {
             case MAIN_MENU:
-                screen = MainMenu.getInstance();
-                break;
-            case LEVEL_SELECT:
-                screen = LevelSelect.getInstance();
-                break;
-            case GAMEPLAY:
-                screen = Gameplay.getInstance();
+                screen = PlayMenu.getInstance();
                 break;
             case PAUSE_MENU:
                 // Implement PauseMenu screen
                 break;
             case GAME_OVER:
-                // Implement GameOver screen
+                screen = GameOver.getInstance();
                 break;
         }
         root.getChildren().setAll(screen.getRoot());
